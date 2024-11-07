@@ -116,6 +116,8 @@ def game_start():
             win_check()
             turn=True
 
+    print_board()
+
     retry=input("wanna try again? ").lower()
     if retry=="yes" or retry =="y":
         game_running=True
