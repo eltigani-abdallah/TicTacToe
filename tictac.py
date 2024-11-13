@@ -182,7 +182,7 @@ def game_start():
         game_running=True
         game_start()
 
-    elif retry=="no" or retry=="no":
+    elif retry=="no" or retry=="n":
         game_running=False
         print("see ya!")
 
