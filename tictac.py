@@ -28,7 +28,7 @@ def player_x_turn():
     while True:
         place=int(input("PLAYER X: please choose a number from 1 to 9: "))-1
         try:    #start of try block, to create a custom message instead of ending up with an error
-            if 0<=place<=9 and board[place]=="-":
+            if 0<=place<=8 and board[place]=="-":
                 board[place]=player_x
                 break
 
@@ -46,7 +46,7 @@ def player_o_turn():
     while True:
         place=int(input("PLAYER O: please choose a number from 1 to 9: "))-1
         try:    #try block, same as player x
-            if 0<=place<=9 and board[place]=="-":
+            if 0<=place<=8 and board[place]=="-":
                 board[place]=player_o
                 break
 
@@ -139,7 +139,7 @@ def game_start():
     ai=input("VS mode | AI mode").lower()
 
     #vs AI mode
-    if ai=="ai" or ai=="ai mode":
+    if ai=="ai" or ai=="ai mode" or ai==" ai" or ai==" ai mode":
         while game_running==True:
 
             if turn:
@@ -187,7 +187,7 @@ def game_start():
         print("see ya!")
 
 
-
+game_start()
 
 
 
